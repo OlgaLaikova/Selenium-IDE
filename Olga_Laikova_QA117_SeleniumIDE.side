@@ -1,0 +1,459 @@
+{
+  "id": "f0e3067f-1491-4f68-867e-b61fb0eaa689",
+  "version": "2.0",
+  "name": "Olga_Laikova_QA117_SeleniumIDE",
+  "url": "https://lutik.ua/",
+  "tests": [{
+    "id": "8ebbdc5a-37ab-4a2d-9758-8658e481e1de",
+    "name": "Додати товар до кошика (https://lutik.ua/)",
+    "commands": [{
+      "id": "a33c0af0-93bc-4311-9989-d589d3c2a934",
+      "comment": "",
+      "command": "open",
+      "target": "https://lutik.ua/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "63158415-3102-4d80-8b49-0397ceea4c29",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1366x679",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2675acbc-284b-463b-aac0-e626f7a776fe",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//*[@id=\"text_count\"]",
+      "targets": [],
+      "value": "0"
+    }, {
+      "id": "691b9ed6-a66f-49b9-b9b2-f84d7b8eaf99",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[2]/div/a/img",
+      "targets": [
+        ["css=.product-main:nth-child(2) img", "css:finder"],
+        ["xpath=//img[@alt='Яскрава кофточка на ґудзиках з люриксовим низом']", "xpath:img"],
+        ["xpath=//div[2]/div/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0abfb00d-1bbd-43d0-bcfe-0d79ba38a419",
+      "comment": "",
+      "command": "open",
+      "target": "https://lutik.ua/index.php?route=product/product&path=18_69&product_id=262",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2914e5a3-3684-4f92-b7ac-bfd79db3cf6c",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "xpath=//*[@id=\"input-option666\"]",
+      "targets": [
+        ["id=button-coupon", "id"],
+        ["css=#button-coupon", "css:finder"],
+        ["xpath=//input[@id='button-coupon']", "xpath:attributes"],
+        ["xpath=//div[@id='accordion']/div/div/span/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": " --- Оберіть --- "
+    }, {
+      "id": "15c786d6-8a17-4ee0-a0c4-b5cab637814c",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//*[@id=\"input-option666\"]",
+      "targets": [],
+      "value": " --- Оберіть --- "
+    }, {
+      "id": "c86d5fe9-42b6-4d88-88a1-d34821247a7a",
+      "comment": "",
+      "command": "select",
+      "target": "id=input-option666",
+      "targets": [],
+      "value": "label=104"
+    }, {
+      "id": "00aa3b00-55a8-487b-9dc4-6f9cf4cc7dd7",
+      "comment": "",
+      "command": "storeValue",
+      "target": "id=input-option666",
+      "targets": [],
+      "value": "variable_product_size"
+    }, {
+      "id": "823b3759-72b0-4784-b706-8eacb009e6f6",
+      "comment": "",
+      "command": "type",
+      "target": "id=input-quantity",
+      "targets": [
+        ["id=input-quantity", "id"],
+        ["name=quantity", "name"],
+        ["css=#input-quantity", "css:finder"],
+        ["xpath=//input[@id='input-quantity']", "xpath:attributes"],
+        ["xpath=//div[@id='product']/div[5]/label/div/input", "xpath:idRelative"],
+        ["xpath=//label/div/input", "xpath:position"]
+      ],
+      "value": "1"
+    }, {
+      "id": "5a6076fc-e84b-40db-94f8-468f796653a7",
+      "comment": "",
+      "command": "click",
+      "target": "id=button-cart",
+      "targets": [
+        ["id=button-cart", "id"],
+        ["css=#button-cart", "css:finder"],
+        ["xpath=//button[@id='button-cart']", "xpath:attributes"],
+        ["xpath=//div[@id='product']/div[6]/label/div/button", "xpath:idRelative"],
+        ["xpath=//label/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d8fecaf6-4bb8-4e49-ae84-afa79cf18f9d",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,349)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0aa49af4-6b0c-4021-88ed-3bbca8b48501",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[@id='cart']/div/div/img",
+      "targets": [
+        ["css=.cart-img > img", "css:finder"],
+        ["xpath=//div[@id='cart']/div/div/img", "xpath:idRelative"],
+        ["xpath=//div/div/div/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4878b0da-66a7-4d68-ab63-42218f35120f",
+      "comment": "",
+      "command": "open",
+      "target": "https://lutik.ua/cart/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6fa23896-0e45-40c7-90de-43b686b5da5a",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.name-column > a",
+      "targets": [],
+      "value": "Яскрава кофточка на ґудзиках з люриксовим низом"
+    }, {
+      "id": "5400d84c-8d56-423b-9b15-4563626bfaba",
+      "comment": "",
+      "command": "verifyText",
+      "target": "xpath=//*[@id=\"input-option666\"]/option[3]",
+      "targets": [],
+      "value": "104"
+    }, {
+      "id": "92749904-e40d-4fe9-882b-26052f713436",
+      "comment": "",
+      "command": "assertSelectedValue",
+      "target": "id=input-option666",
+      "targets": [],
+      "value": "${variable_product_size}"
+    }, {
+      "id": "b65b7340-bdac-493c-b95d-5e10b9579a17",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=/html/body/div[2]/div/div/h2/form/div/table/tbody/tr/td[7]/button",
+      "targets": [
+        ["css=.removeprod > .fa", "css:finder"],
+        ["xpath=//tr[@id='product15186']/td[7]/button/i", "xpath:idRelative"],
+        ["xpath=//td[7]/button/i", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "05d8217d-b635-427b-bd20-d9537db9425f",
+    "name": "Локалізація елементів хедера на українську",
+    "commands": [{
+      "id": "4a5a02df-b02d-40bd-9cda-adf4602c0bb1",
+      "comment": "",
+      "command": "open",
+      "target": "https://lutik.ua/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7b6233b9-c5b5-4a6e-b69b-2aa523ad1792",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=/html/body/header/section[1]/div/div[1]/div[2]/form/a[2]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "04e53488-531e-4fc6-9f8e-8426c5d8ed40",
+      "comment": "",
+      "command": "verifyText",
+      "target": "xpath=/html/body/header/section[2]/div/div[1]/ul/li[1]/a",
+      "targets": [],
+      "value": "ГОЛОВНА"
+    }, {
+      "id": "97122a3e-3df8-4449-8388-e97132dc5d78",
+      "comment": "",
+      "command": "verifyText",
+      "target": "xpath=/html/body/header/section[2]/div/div[1]/ul/li[2]/a",
+      "targets": [],
+      "value": "МАЛЮКИ"
+    }, {
+      "id": "9801a49c-f7e0-48ca-b150-bc905345b8dc",
+      "comment": "",
+      "command": "store",
+      "target": "ДІВЧАТКА",
+      "targets": [],
+      "value": "variable_girls"
+    }, {
+      "id": "421055f7-ba0e-44d0-94c1-691074d3b92c",
+      "comment": "",
+      "command": "verifyText",
+      "target": "xpath=/html/body/header/section[2]/div/div[1]/ul/li[3]/a",
+      "targets": [],
+      "value": "${variable_girls}"
+    }, {
+      "id": "8898bffe-9508-47fd-b221-8c26e3934926",
+      "comment": "",
+      "command": "verifyText",
+      "target": "xpath=/html/body/header/section[2]/div/div[1]/ul/li[4]/a",
+      "targets": [],
+      "value": "ХЛОПЧИКИ"
+    }, {
+      "id": "f2300fe0-54b6-4a50-be12-cc2a6dfb862c",
+      "comment": "",
+      "command": "verifyText",
+      "target": "xpath=/html/body/header/section[2]/div/div[1]/ul/li[8]/a",
+      "targets": [],
+      "value": "АКЦІЯ"
+    }, {
+      "id": "ff4d4f59-f049-488c-aca8-10abe799872a",
+      "comment": "",
+      "command": "verifyText",
+      "target": "xpath=/html/body/header/section[2]/div/div[1]/ul/li[9]/a",
+      "targets": [],
+      "value": "СПІВРОБІТНИЦТВО"
+    }, {
+      "id": "f2ce9133-21c1-4464-a398-6cede6578c75",
+      "comment": "",
+      "command": "verifyText",
+      "target": "xpath=/html/body/header/section[2]/div/div[1]/ul/li[10]/a",
+      "targets": [],
+      "value": "ДОСТАВКА"
+    }, {
+      "id": "8d4d3ed9-8664-4cb3-b066-0559b1552c0a",
+      "comment": "",
+      "command": "verifyText",
+      "target": "xpath=/html/body/header/section[2]/div/div[1]/ul/li[11]/a",
+      "targets": [],
+      "value": "ОПЛАТА"
+    }, {
+      "id": "9aea1e44-dc71-499e-90fb-09cd4fde5b91",
+      "comment": "",
+      "command": "verifyText",
+      "target": "xpath=/html/body/header/section[2]/div/div[1]/ul/li[12]/a",
+      "targets": [],
+      "value": "ПРО НАС"
+    }, {
+      "id": "62ac300d-15bb-42b3-a4fb-af0a017be622",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.search-wrap .toggle_search",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "9f8a6f4b-5400-4fc1-89bb-e88b0557fe6a",
+    "name": "Перехід по посиланнях в розділі Допомога в футері",
+    "commands": [{
+      "id": "502d0cc5-2353-4287-b4f1-3bca03ec23a6",
+      "comment": "",
+      "command": "open",
+      "target": "https://lutik.ua/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "84300cce-81ed-4ddf-b89f-cb86a93f7260",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1366x679",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a0561a50-5a68-4f60-bd7b-0a5657ae486d",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//a[contains(@href, 'https://lutik.ua/shipping')]",
+      "targets": [
+        ["linkText=Умови доставки", "linkText"],
+        ["css=.help-wrap li:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Умови доставки')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'https://lutik.ua/shipping')]", "xpath:href"],
+        ["xpath=//div/div/div/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Умови доставки')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4747a22a-63cc-4c9f-ad22-8b89ec42bfbc",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return window.location.href",
+      "targets": [],
+      "value": "shipping_page"
+    }, {
+      "id": "87069a3b-7586-4c18-9499-51a0477e00f0",
+      "comment": "",
+      "command": "assert",
+      "target": "shipping_page",
+      "targets": [],
+      "value": "https://lutik.ua/shipping"
+    }, {
+      "id": "0754b132-ae08-47c6-b222-7845abfe053c",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//a[contains(@href, 'https://lutik.ua/payment_terms')]",
+      "targets": [
+        ["linkText=Умови оплати", "linkText"],
+        ["css=.help-wrap li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Умови оплати')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'https://lutik.ua/payment_terms')]", "xpath:href"],
+        ["xpath=//div/div/div/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Умови оплати')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3c7331f2-c40f-4aeb-80c8-543de252e6c4",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return window.location.href",
+      "targets": [],
+      "value": "payments_page"
+    }, {
+      "id": "36fa4eef-fe32-4a0f-970c-c3ce7f03a464",
+      "comment": "",
+      "command": "assert",
+      "target": "payments_page",
+      "targets": [],
+      "value": "https://lutik.ua/payment_terms"
+    }, {
+      "id": "bf16e83d-e606-4722-bbc3-4cd63a68a43d",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//a[contains(@href, 'https://lutik.ua/guarantees')]",
+      "targets": [
+        ["linkText=Гарантії", "linkText"],
+        ["css=.help-wrap li:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Гарантії')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'https://lutik.ua/guarantees')]", "xpath:href"],
+        ["xpath=//div/div/div/ul/li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Гарантії')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "19a9368f-782a-4906-960a-11ed23edcc86",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return window.location.href",
+      "targets": [],
+      "value": "guarantees_page"
+    }, {
+      "id": "5050de07-aee3-4d0c-b232-0b7e44357634",
+      "comment": "",
+      "command": "assert",
+      "target": "guarantees_page",
+      "targets": [],
+      "value": "https://lutik.ua/guarantees"
+    }, {
+      "id": "8ded8a00-c458-4987-a63f-4e53c6ceb051",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//a[contains(@href, 'https://lutik.ua/promokod')]",
+      "targets": [
+        ["linkText=Як користуватись промокодом", "linkText"],
+        ["css=.help-wrap li:nth-child(4) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Як користуватись промокодом')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'https://lutik.ua/promokod')]", "xpath:href"],
+        ["xpath=//div/div/div/ul/li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Як користуватись промокодом')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a3d3168a-65f9-4ee9-9d12-e0d5f6e5ce49",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return window.location.href",
+      "targets": [],
+      "value": "promokod_page"
+    }, {
+      "id": "17a59cbb-74a0-4c82-b6f5-1f95fd505b8e",
+      "comment": "",
+      "command": "assert",
+      "target": "promokod_page",
+      "targets": [],
+      "value": "https://lutik.ua/promokod"
+    }, {
+      "id": "137ada8e-7893-488e-b850-53ccc48eb339",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//a[contains(@href, 'https://lutik.ua/return%20of%20goods')]",
+      "targets": [
+        ["linkText=Як повернути товар", "linkText"],
+        ["css=.help-wrap li:nth-child(5) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Як повернути товар')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'https://lutik.ua/return%20of%20goods')]", "xpath:href"],
+        ["xpath=//div/div/div/ul/li[5]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Як повернути товар')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0cb6f69e-a79c-453f-9f30-4a8bb626c751",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return window.location.href",
+      "targets": [],
+      "value": "return_of_goods_page"
+    }, {
+      "id": "2215cc62-ff5b-469c-9945-6a77329531f7",
+      "comment": "",
+      "command": "assert",
+      "target": "return_of_goods_page",
+      "targets": [],
+      "value": "https://lutik.ua/return%20of%20goods"
+    }, {
+      "id": "186908af-def4-44ca-b2d5-157d802b8946",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//a[contains(@href, 'https://lutik.ua/geo')]",
+      "targets": [
+        ["linkText=Відстежити посилку", "linkText"],
+        ["css=.help-wrap li:nth-child(6) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Відстежити посилку')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'https://lutik.ua/geo')]", "xpath:href"],
+        ["xpath=//div/div/div/ul/li[6]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Відстежити посилку')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "71fae1b3-50b7-45c8-b555-db289b7ba0bf",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return window.location.href",
+      "targets": [],
+      "value": "geo_page"
+    }, {
+      "id": "576e5037-af93-41e4-a7a1-e78b8961cd19",
+      "comment": "",
+      "command": "assert",
+      "target": "geo_page",
+      "targets": [],
+      "value": "https://lutik.ua/geo"
+    }]
+  }],
+  "suites": [{
+    "id": "b1aa4839-a73c-47ea-a375-2568fd58d5f9",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://lutik.ua/"],
+  "plugins": []
+}
